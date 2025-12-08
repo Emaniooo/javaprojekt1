@@ -20,10 +20,86 @@
         <button id="startQuizBtn">Starta quizet 🚀</button>
 </div>
 <form id="quizForm" style="display:none;">
-    
+
+<div class="question" data-type="mc" data-correct="1">
+    <p>1. Vilket datum firas den svenska nationaldagen?</p>
+    <label><input type="radio" name="q1" value="0"> 1 maj</label>
+    <label><input type="radio" name="q1" value="1"> 6 juni</label>
+    <label><input type="radio" name="q1" value="2"> 25 december</label>
+    <label><input type="radio" name="q1" value="3"> 1 januari</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="0">
+    <p>2. När firar vi kanelbullens dag i Sverige?</p>
+    <label><input type="radio" name="q2" value="0"> 4 oktober</label>
+    <label><input type="radio" name="q2" value="1"> 14 februari</label>
+    <label><input type="radio" name="q2" value="2"> 1 december</label>
+    <label><input type="radio" name="q2" value="3"> 20 april</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="2">
+    <p>3. Vilken är Sveriges fjärde största stad?</p>
+    <label><input type="radio" name="q3" value="0"> Stockholm</label>
+    <label><input type="radio" name="q3" value="1"> Göteborg</label>
+    <label><input type="radio" name="q3" value="2"> Uppsala</label>
+    <label><input type="radio" name="q3" value="3"> Malmö</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="0">
+    <p>4. Vilket är Sveriges mest besökta turistmål?</p>
+    <label><input type="radio" name="q4" value="0"> Vasamuseet</label>
+    <label><input type="radio" name="q4" value="1"> Liseberg</label>
+    <label><input type="radio" name="q4" value="2"> Skansen</label>
+    <label><input type="radio" name="q4" value="3"> Gamla stan</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="0">
+    <p>5. Vilket är Sveriges nationaldjur?</p>
+    <label><input type="radio" name="q5" value="0"> Älg</label>
+    <label><input type="radio" name="q5" value="1"> Björn</label>
+    <label><input type="radio" name="q5" value="2"> Lodjur</label>
+    <label><input type="radio" name="q5" value="3"> Varg</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="0">
+    <p>6. Vad heter Sveriges kung?</p>
+    <label><input type="radio" name="q6" value="0"> Carl XVI Gustaf</label>
+    <label><input type="radio" name="q6" value="1"> Gustav Vasa</label>
+    <label><input type="radio" name="q6" value="2"> Carl XII</label>
+    <label><input type="radio" name="q6" value="3"> Oscar II</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="2">
+    <p>7. Hur många människor bor det i Sverige?</p>
+    <label><input type="radio" name="q7" value="0"> Ca 5 miljoner</label>
+    <label><input type="radio" name="q7" value="1"> Ca 8 miljoner</label>
+    <label><input type="radio" name="q7" value="2"> Ca 10,5 miljoner</label>
+    <label><input type="radio" name="q7" value="3"> Ca 15 miljoner</label>
+</div>
+
+<div class="question" data-type="mc" data-correct="1">
+    <p>8. Vad brukar svenskarna äta på fettisdagen?</p>
+    <label><input type="radio" name="q8" value="0"> Pepparkakor</label>
+    <label><input type="radio" name="q8" value="1"> Semlor</label>
+    <label><input type="radio" name="q8" value="2"> Kanelbullar</label>
+    <label><input type="radio" name="q8" value="3"> Lussekatter</label>
+</div>
+
+<div class="question" data-type="tf" data-correct="sant">
+    <p>9. Är IKEA svenskt?</p>
+    <label><input type="radio" name="q9" value="sant"> Sant</label>
+    <label><input type="radio" name="q9" value="falskt"> Falskt</label>
+</div>
+
+<div class="question" data-type="tf" data-correct="falskt">
+    <p>10. Är ABBA ett norskt band?</p>
+    <label><input type="radio" name="q10" value="sant"> Sant</label>
+    <label><input type="radio" name="q10" value="falskt"> Falskt</label>
+</div>
+    <button id="submitBtn" style="display:none;">Skicka in</button>
+
 </form>
 
-    <button id="submitBtn" style="display:none;">Skicka in</button>
 
     <div id="result"></div>
 </div>
