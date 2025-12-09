@@ -24,10 +24,13 @@ submitBtn.addEventListener("click", () => {
         const correct = q.dataset.correct;    // t.ex. "1", "sant", "0,2,3"
         const labels = q.querySelectorAll("label");
 
+    // Rensa tidigare färger
+    labels.forEach(label => label.classList.remove("right", "wrong"));
+
     });
 
 
 
 
-    
+
 });
