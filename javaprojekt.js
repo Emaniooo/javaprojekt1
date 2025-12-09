@@ -24,12 +24,10 @@ submitBtn.addEventListener("click", () => {
         const correct = q.dataset.correct;    // t.ex. "1", "sant", "0,2,3"
         const labels = q.querySelectorAll("label");
 
+        // Rensa tidigare färger
+        labels.forEach(label => label.classList.remove("right", "wrong"));
 
-    // Rensa tidigare färger
-    labels.forEach(label => label.classList.remove("right", "wrong"));
-
-
-  // SANT/FALSKT + MULTIPLE CHOICE
+        // SANT/FALSKT + MULTIPLE CHOICE
         if (type === "tf" || type === "mc") {
             const selected = q.querySelector("input:checked");
             if (!selected) return; // inget svar
@@ -49,11 +47,30 @@ submitBtn.addEventListener("click", () => {
             if (selected.value === correct) score++;
         }
 
+        // CHECKBOX-FRÅGOR
+        if (type === "cb") {
+            const correctArr = correct.split(","); // ["0","2","3"]
+            const selected = [...q.querySelectorAll("input:checked")].map(i => i.value);
 
+            labels.forEach(label => {
+                const input = label.querySelector("input");
+
+                if (correctArr.includes(input.value)) {
+                    label.classList.add("right");
+                }
+
+                if (input.checked && !correctArr.includes(input.value)) {
+                    label.classList.add("wrong");
+                }
+            });
+
+            // Rätt om exakt rätt kombination
+            if (selected.sort().toString() === correctArr.sort().toString()) {
+                score++;
+            }
+        }
     });
 
-
-
-
-
+    // VISA RESULTAT
+    resultDiv.innerHTML = `Du fick <strong>${score}</strong> rätt av <strong>${questions.length}</strong>!`;
 });
