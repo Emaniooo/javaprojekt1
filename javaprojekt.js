@@ -24,8 +24,31 @@ submitBtn.addEventListener("click", () => {
         const correct = q.dataset.correct;    // t.ex. "1", "sant", "0,2,3"
         const labels = q.querySelectorAll("label");
 
+
     // Rensa tidigare färger
     labels.forEach(label => label.classList.remove("right", "wrong"));
+
+
+  // SANT/FALSKT + MULTIPLE CHOICE
+        if (type === "tf" || type === "mc") {
+            const selected = q.querySelector("input:checked");
+            if (!selected) return; // inget svar
+
+            labels.forEach(label => {
+                const input = label.querySelector("input");
+
+                if (input.value === correct) {
+                    label.classList.add("right");
+                }
+
+                if (input.checked && input.value !== correct) {
+                    label.classList.add("wrong");
+                }
+            });
+
+            if (selected.value === correct) score++;
+        }
+
 
     });
 
