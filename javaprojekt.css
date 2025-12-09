@@ -1,0 +1,18 @@
+body.dark {
+    background: #222;
+    color: white;
+}
+
+label.right {
+    background: #4CAF50;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+label.wrong {
+    background: #E53935;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}

@@ -1,5 +1,10 @@
-let quizForm = document.getElementById("quizForm");
-let submitBtn = document.getElementById("submitBtn");
-let resultDiv = document.getElementById("result");
-let introBox = document.getElementById("introBox");
-let toggleMode = document.getElementById("toggleMode");
+// DARK / LIGHT MODE
+document.getElementById("toggleMode").addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+document.getElementById("startQuizBtn").addEventListener("click", () => {
+    document.getElementById("introBox").style.display = "none";
+    document.getElementById("quizForm").style.display = "block";
+    document.getElementById("submitBtn").style.display = "block";
+});
