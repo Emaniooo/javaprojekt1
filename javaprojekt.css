@@ -16,3 +16,16 @@ label.wrong {
     padding: 4px;
     border-radius: 4px;
 }
+
+.option-image {
+    width: 120px;
+    height: auto;
+    margin: 8px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.option-image.selected {
+    border-color: #4CAF50;
+}

@@ -48,7 +48,7 @@ submitBtn.addEventListener("click", () => {
         }
 
         // CHECKBOX-FRÅGOR
-        if (type === "cb") {
+        if (type === "checkbox") {
             const correctArr = correct.split(","); // ["0","2","3"]
             const selected = [...q.querySelectorAll("input:checked")].map(i => i.value);
 
