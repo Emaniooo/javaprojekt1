@@ -1,4 +1,4 @@
-/* BAS */
+/*  BAS  */
 body {
     font-family: "Inter", Arial, sans-serif;
     background: #f2f2f2;
@@ -13,7 +13,7 @@ body.dark {
     color: #eaeaea;
 }
 
-/* Subtil bakgrundsbild */
+/*  Subtil bakgrundsbild  */
 .background-image {
     position: fixed;
     top: 0;
@@ -77,6 +77,25 @@ button:hover {
 
 .dark button:hover {
     background: #3f7ed1;
+}
+
+/*  FRÅGOR  */
+.question {
+    background: #fafafa;
+    padding: 18px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.dark .question {
+    background: #303030;
+}
+
+.question p {
+    font-size: 19px;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 
