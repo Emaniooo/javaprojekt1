@@ -17,7 +17,7 @@ body.dark {
 .background-image {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -17rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,6 +32,7 @@ body.dark {
     margin: 40px auto;
     background: white;
     padding: 30px;
+    margin-top: 11rem;
     border-radius: 14px;
     box-shadow: 0 6px 25px rgba(0,0,0,0.12);
     transition: 0.3s ease;
@@ -50,7 +51,9 @@ h1 {
     letter-spacing: 1px;
     font-weight: 700;
 }
-
+h1,h2,p,label,button {
+    font-family: cursive;
+}
 /*  KNAPPAR  */
 button {
     display: block;
@@ -134,8 +137,6 @@ label.wrong {
 
 
 /*  RESULTAT  */
-
-
 img{
     height: 10rem;
     width: 10rem;
