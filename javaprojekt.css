@@ -98,31 +98,49 @@ button:hover {
     font-weight: 600;
 }
 
+/*  SVAR  */
+label {
+    display: block;
+    padding: 8px 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 6px;
+}
 
+label:hover {
+    background: rgba(74,144,226,0.12);
+    color: #4a90e2;
+}
 
+.dark label:hover {
+    background: rgba(90,160,255,0.15);
+    color: #5aa0ff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* STYLES FOR QUIZ RESULTS */
+/* Rätt & fel styling */
 label.right {
-    background: #4CAF50;
-    color: white;
+    background: #4CAF50 !important;
+    color: white !important;
     padding: 4px;
     border-radius: 4px;
 }
 
 label.wrong {
-    background: #E53935;
-    color: white;
+    background: #E53935 !important;
+    color: white !important;
     padding: 4px;
     border-radius: 4px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
