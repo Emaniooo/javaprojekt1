@@ -71,9 +71,6 @@ submitBtn.addEventListener("click", () => {
         }
     });
 
-    // VISA RESULTAT
-    resultDiv.innerHTML = `Du fick <strong>${score}</strong> rätt av <strong>${questions.length}</strong>!`;
-
 // PROCENT + FÄRG + IKONER
     const percent = (score / questions.length) * 100;
 
@@ -99,7 +96,7 @@ if (percent < 50) {
         gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Bra kämpat! Du kan bättre!`;
         imgGood.hidden = false;
     } else {
-        gradeText.style.backgroundColor = "lightgreen";
+        gradeText.style.backgroundColor = "green";
         gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Riktigt bra jobbat! Du är professionell!`;
         imgExcellent.hidden = false;
     }
