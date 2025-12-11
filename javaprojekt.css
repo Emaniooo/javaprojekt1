@@ -133,8 +133,18 @@ label.wrong {
 }
 
 
-
-
+/*  RESULTAT  */
+#result {
+    margin-top: 30px;
+    padding: 22px;
+    font-size: 22px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+.dark #result {
+    background: #333;
+}
 
 
 
