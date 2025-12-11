@@ -42,8 +42,42 @@ body.dark {
     box-shadow: 0 6px 25px rgba(255,255,255,0.05);
 }
 
+/*  RUBRIK  */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 
+/*  KNAPPAR  */
+button {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 28px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #4a90e2;
+    color: white;
+    transition: 0.25s ease;
+    font-weight: 600;
+}
 
+button:hover {
+    background: #357ac9;
+    transform: translateY(-2px);
+}
+
+.dark button {
+    background: #5aa0ff;
+}
+
+.dark button:hover {
+    background: #3f7ed1;
+}
 
 
 
