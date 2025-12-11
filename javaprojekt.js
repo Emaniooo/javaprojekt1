@@ -92,15 +92,15 @@ submitBtn.addEventListener("click", () => {
 // Visa rätt meddelande och ikon
 if (percent < 50) {
         gradeText.style.backgroundColor = "tomato";
-        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Underkänt 😞, lycka till nästa gång!`;
+        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Underkänt, lycka till nästa gång!`;
         imgBad.hidden = false;
     } else if (percent >= 50 && percent <= 75) {
         gradeText.style.backgroundColor = "orange";
-        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Bra kämpat! Du kan bättre! 👍`;
+        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Bra kämpat! Du kan bättre!`;
         imgGood.hidden = false;
     } else {
         gradeText.style.backgroundColor = "lightgreen";
-        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Riktigt bra jobbat! Du är professionell! 💪`;
+        gradeText.textContent = `Du fick ${score}/${questions.length} rätt (${percent.toFixed(0)}%). Riktigt bra jobbat! Du är professionell!`;
         imgExcellent.hidden = false;
     }
 

@@ -146,6 +146,11 @@ label.wrong {
     background: #333;
 }
 
+img{
+    height: 10rem;
+    width: 10rem;
+    padding-left: 17rem;
+}
 
 
 
