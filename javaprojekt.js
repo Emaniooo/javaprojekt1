@@ -73,4 +73,19 @@ submitBtn.addEventListener("click", () => {
 
     // VISA RESULTAT
     resultDiv.innerHTML = `Du fick <strong>${score}</strong> rätt av <strong>${questions.length}</strong>!`;
+
+// PROCENT + FÄRG + IKONER
+    const percent = (score / questions.length) * 100;
+
+    const resultBox = document.getElementById("final-result-container");
+    const gradeText = document.getElementById("grade");
+
+    const imgExcellent = document.getElementById("excellent");
+    const imgGood = document.getElementById("good");
+    const imgBad = document.getElementById("bad");
+
+
+
+
+
 });
