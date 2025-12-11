@@ -134,17 +134,7 @@ label.wrong {
 
 
 /*  RESULTAT  */
-#result {
-    margin-top: 30px;
-    padding: 22px;
-    font-size: 22px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 700;
-}
-.dark #result {
-    background: #333;
-}
+
 
 img{
     height: 10rem;
@@ -152,7 +142,14 @@ img{
     padding-left: 17rem;
 }
 
-
+#grade{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: tomato;
+    padding: 4rem;
+    margin: 2rem;
+    text-align: center;
+}
 
 
 
